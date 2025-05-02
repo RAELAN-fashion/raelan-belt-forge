@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+                // RAELAN custom colors
+                raelan: {
+                    bg: '#121212',
+                    secondary: '#1e1e1e',
+                    footer: '#0d0d0d',
+                    gold: '#b98a5a',
+                    offwhite: '#f9f6f1',
+                    white: '#ffffff'
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +84,21 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'card-hover': {
+                    '0%': { transform: 'translateY(0)' },
+                    '100%': { transform: 'translateY(-10px)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'card-lift': 'card-hover 0.3s ease-out forwards'
+			},
+            fontFamily: {
+                'playfair': ['"Playfair Display"', 'serif'],
+                'raleway': ['Raleway', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
