@@ -1,10 +1,14 @@
 
 import React from 'react';
+import BeltCarousel from './BeltCarousel';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-raelan-bg via-raelan-bg to-raelan-secondary z-0"></div>
+      
+      {/* Belt Slideshow Background */}
+      <BeltCarousel />
       
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -35,23 +39,6 @@ const Hero: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2" 
-          strokeLinecap="round" 
-          strokeLinejoin="round" 
-          className="text-raelan-gold"
-        >
-          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-        </svg>
       </div>
     </section>
   );
