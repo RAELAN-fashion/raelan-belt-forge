@@ -1,19 +1,11 @@
-
 import React from 'react';
-
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-raelan-footer py-12">
+  return <footer className="bg-raelan-footer py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <img 
-              src="/lovable-uploads/d18289fb-da89-4ae7-ad58-bd2fae118e07.png" 
-              alt="RAELAN Logo" 
-              className="h-10"
-            />
+            <img src="/lovable-uploads/d18289fb-da89-4ae7-ad58-bd2fae118e07.png" alt="RAELAN Logo" className="h-10" />
           </div>
           
           <div className="flex flex-col md:flex-row gap-8 md:gap-16">
@@ -41,9 +33,10 @@ const Footer: React.FC = () => {
             <div>
               <h4 className="text-raelan-gold font-bold mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li className="text-raelan-offwhite/80">info@raelan.com</li>
-                <li className="text-raelan-offwhite/80">+1 (800) RAELAN</li>
-                <li className="text-raelan-offwhite/80">New York, NY</li>
+                <li className="text-raelan-offwhite/80">raelanfashion@gmail.com</li>
+                <li className="text-raelan-offwhite/80">+91 7904622479
++91 9791196485</li>
+                <li className="text-raelan-offwhite/80">Chennai, IN</li>
               </ul>
             </div>
           </div>
@@ -53,8 +46,6 @@ const Footer: React.FC = () => {
           <p>© {year} RAELAN. Wear authority. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
