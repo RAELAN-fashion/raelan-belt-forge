@@ -36,7 +36,8 @@ const Footer: React.FC = () => {
                 <li className="text-raelan-offwhite/80">raelanfashion@gmail.com</li>
                 <li className="text-raelan-offwhite/80">+91 7904622479
 +91 9791196485</li>
-                <li className="text-raelan-offwhite/80">Chennai, IN</li>
+                <li className="text-raelan-offwhite/80">Chennai, IN
+Raelan.store</li>
               </ul>
             </div>
           </div>
