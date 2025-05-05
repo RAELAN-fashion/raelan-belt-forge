@@ -7,6 +7,14 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-raelan-bg via-raelan-bg to-raelan-secondary z-0"></div>
       
+      {/* New background image with opacity */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay z-0"
+        style={{
+          backgroundImage: 'url("/lovable-uploads/4b6a2f91-874a-4ced-9b31-1907cae49c28.png")'
+        }}
+      ></div>
+      
       {/* Belt Slideshow Background */}
       <BeltCarousel />
       
