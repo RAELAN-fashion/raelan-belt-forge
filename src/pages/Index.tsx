@@ -9,6 +9,14 @@ import Footer from '../components/Footer';
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-raelan-bg text-raelan-offwhite relative">
+      {/* Main background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
+        style={{
+          backgroundImage: 'url("/lovable-uploads/01e80cce-e261-4145-aa13-a4cdbc7a36cb.png")'
+        }}
+      ></div>
+      
       {/* Leather texture overlay */}
       <div className="absolute inset-0 leather-texture opacity-20 pointer-events-none"></div>
       
